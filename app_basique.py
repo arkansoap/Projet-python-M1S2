@@ -14,14 +14,15 @@ app = typer.Typer(help="Application résolvant des programmes duals liés à la 
 
 
 @app.command("std")
-def par_entree_standard(mode):
+def par_entree_standard(frac : bool):
+    
     """Résout le problème dual à partir de l'entrée standard.
     Choix de l'option de résolution : lp ou pulp
     """
     cs = Console()
     entree = "".join([ligne for ligne in stdin])
     prob = probleme.Probleme.par_str(entree)
-    cs.print(prob.genere_table())
+    cs.print(affichage.genere_table(prob))
     cs.print(affichage.affichage_solutions(prob, frac))
 
 
