@@ -84,3 +84,17 @@ def _resoud_pulp(nom:str, var:List[variable], coeff:coeff, mb1:coeff, mb2:coeff,
     obj = prob.objective.value()
     
     return prob, results, obj
+
+def resume_pulp(probleme: Probleme, primal: bool) -> Union[prob,float]:
+    """Résumé du programme : données du pb, solutions, valeur de la fonction objectif"""
+    liste_demande, liste_coeff, liste_coefft, liste_cout, liste_arme, liste_lot = _defList(probleme)
+    if primal == True :
+        prob, results, obj = _resoud_pulp("Prog_primal", liste_lot, liste_coefft, liste_cout, liste_demande, False, True)
+    elif primal == False :
+        prob, results, obj = _resoud_pulp("Prog_dual", liste_arme, liste_coeff, liste_demande, liste_cout, True, False)
+    
+    return prob, results, obj
+
+
+
+

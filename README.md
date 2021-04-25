@@ -12,8 +12,8 @@ On pourra faire `python -m prog_dual` pour un exemple avec des lots non fraction
 
 ### Exemple avec le paramètre `std` :
 
-<img src="./app_basique_std.gif">
+<img src="img1.gif">
 
 ## Application `app_gui.py`
 
-<img src="./gui.gif">
+<img src="img2.gif">

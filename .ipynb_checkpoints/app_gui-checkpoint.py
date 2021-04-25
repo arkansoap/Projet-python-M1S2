@@ -6,7 +6,7 @@ Libraire pour un gui de la librairie ordonnancement.
 """
 import ipywidgets as ipw
 from IPython.display import display
-from  prog_dual import Probleme, Lot, Mon_exception, Mon_exception_lot, resolution
+from  prog_dual import Probleme, Lot, Mon_exception, Mon_exception_lot, resolution, affichage
 
 red = '\033[91m'
 green = '\033[92m'
@@ -78,11 +78,11 @@ Demande -> une seule ligne
             self.zone_solution_primal.clear_output()
             self.zone_solution_dual.clear_output()        
             with self.zone_probleme:
-                display(self.probleme.genere_table())
+                display(affichage.genere_table(self.probleme))
             with self.zone_solution_primal:
-                display(resolution.tables_solutions(self.probleme, primal = True, frac = False))
+                display(affichage.tables_solutions(self.probleme, primal = True, frac = False))
             with self.zone_solution_dual:
-                display(resolution.tables_solutions(self.probleme, primal = False, frac = False))
+                display(affichage.tables_solutions(self.probleme, primal = False, frac = False))
             with self.zone_curs_cout:
                 for i in range(0,len(self.probleme.lots)):
                     a = self.probleme.lots[i].cout
@@ -117,8 +117,8 @@ Demande -> une seule ligne
         self.zone_solution_dual.clear_output()
 
         with self.zone_probleme:
-            display(self.probleme.genere_table())
+            display(affichage.genere_table(self.probleme))
         with self.zone_solution_primal:
-            display(resolution.tables_solutions(self.probleme, primal = True, frac = False))
+            display(affichage.tables_solutions(self.probleme, primal = True, frac = False))
         with self.zone_solution_dual:
-            display(resolution.tables_solutions(self.probleme, primal = False, frac = False))
+            display(affichage.tables_solutions(self.probleme, primal = False, frac = False))
