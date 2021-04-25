@@ -8,7 +8,7 @@ On pourra faire `python -m prog_dual` pour un exemple avec des lots non fraction
 
 ### Exemple avec le paramètre `fch` :
 
-<img src="./app_basique_fch.gif">
+<img src="app_basique_fch.gif">
 
 ### Exemple avec le paramètre `std` :
 
