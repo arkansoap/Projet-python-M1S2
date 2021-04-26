@@ -1,6 +1,4 @@
 *tags
 *ipynb_checkpoints
 *__pycache__*
-tags.lock
-tags.temp
 *.coverage
