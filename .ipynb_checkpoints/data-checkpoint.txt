@@ -1,4 +1,0 @@
-Lot1 / 10000000 / Fusils Grenades Chars Mitrailleuses Bazookas / 500 1000 10 100 80
-Lot2 / 12000000 / Fusils Grenades Chars Mitrailleuses Bazookas / 300 2000 20 80 120
-Lot3 / 15000000 / Fusils Grenades Chars Mitrailleuses Bazookas / 800 1500 15 15 200
-100000 200000 100 400 400 
