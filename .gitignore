@@ -1,2 +1,8 @@
+*tags
 *ipynb_checkpoints
 *__pycache__*
+Seance01/dessin.py
+tags.lock
+tags.temp
+*test-output.xml
+*.coverage
