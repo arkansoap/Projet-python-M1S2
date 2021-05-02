@@ -33,7 +33,7 @@ Les Gif ci-dessous montrent l'utilisation de l'application basique depuis un ter
 Précisions sur les arguments : 
 
 - On précisera **"fch"** pour une résolution à partir d'un fichier texte se trouvant dans le même dossier que l'application. On indiquera alors en dernier argument le nom du fichier (**"nom_fichier.txt"**).
-- On précisera **"*std"** pour une résolution à partir des données rentrées directement dans le terminal.
+- On précisera **"std"** pour une résolution à partir des données rentrées directement dans le terminal.
 - On précisera en deuxième argument si l'on souhaite le cas où les sont fractionnables (**"True"**) ou non (**"False"**). 
 
 On pourra faire `python -m prog_dual` pour un exemple avec des lots non fractionnables.
