@@ -135,20 +135,6 @@ Lot2 / 2 / caillou ciseau / 7 2
     probleme = Probleme.par_str(entree)
     assert probleme == probleme2
     
-def test_lot_valide():
-    pass
-
-def test_lot_nonValide():
-    pass
-
-def test_pb_valide():
-    pass
-
-def test_pb_nonValide():
-    pass
-
-def test_genere_table():
-    pass 
 
     
 

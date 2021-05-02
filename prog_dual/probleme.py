@@ -203,7 +203,7 @@ class Probleme:
             demande[i]= int(demande[i])        
         return cls(lots, demande)
             
-    def _def_matrice(self) -> list :
+    def _def_matrice(self) -> Union[np.matrix, np.ndarray] :
         """définition de la matrice qui servira à générer le tableau du problème"""
         coeff=[]
         for i in range(0,len(self.lots)):
