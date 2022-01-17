@@ -14,6 +14,10 @@ On trouvera dans ce dépot :
 
 # Notice utilisateur :
 
+## Application basé sur Tkinter
+
+En cours de développement.
+
 ## Application `app_gui.py`
 
 Le Gif ci-dessous montre l'utilisation de l'application GUI.
